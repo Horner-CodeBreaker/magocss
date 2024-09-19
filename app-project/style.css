@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box sizing transgorma a medida das caixas para ficarem baseadas de acordo com a borda das caixas */
+}
+
+body * {
+  font-family: "quicksand", sans-serif;
+  color: #f8f8f8;
+}
+
+body {
+  /* background-image: url(./Assets/BGImage.png);
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  background: url(./assets/bgimage.png) no-repeat top center/cover;
+}
+
+p {
+  color: #f8f8f8;
+}
+
+#container {
+  margin-top: 70px;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 20px;
+  height: 712px;
+  width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#profile {
+  padding: 24px;
+  text-align: center;
+
+  /* este text alig ali, vai cetralizar no tudo que for "display: line" dentro do id profile, alinhando automaticamente a imagem abaixo que é por padrão (display line*/
+}
+
+#profile img {
+  padding-top: 30px;
+  display: block;
+
+  /* Caso eu vá alinhar aqui diretamente e não defina o alinhamento dos componentes line no item pai, ou queira um alinhamento diferente para esse elemento em especifico eu tenho que verificar o tipo de display, senão o MARGiN: AUTO não funcion! */
+
+  width: 112px;
+  margin: auto;
+}
+
+#profile p {
+  font-family: "Gloria Hallelujah", cursive;
+  margin-top: px;
+  font-weight: lighter;
+  font-size: 28px;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  width: 225px;
+  margin: auto;
+
+  border: 1px solid #303030;
+  border-radius: 15px;
+  background: #f8f8f810;
+  backdrop-filter: blur(1px);
+
+  text-decoration: none;
+  font-weight: 600;
+
+  font-family: "quicksand" sans-serif;
+}
+
+#imglogo {
+  justify-content: left;
+  margin: 30px;
+  margin-bottom: 0px;
+  width: 100px;
+}
